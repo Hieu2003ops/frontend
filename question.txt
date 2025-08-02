@@ -1,0 +1,13 @@
+1. Cái vấn đề đó là ở folder root đã có thằng global.css rồi 
+-> vì răng vẫn cần tạo folder styles mà trong đó có file global.css y chang thằng ở root ? 
+
+2. Đó là thì mỗi cái folder con nằm trong root tức là mỗi route 
+thì lỡ như trong cái route nớ ta muốn decor 1 kiểu chẳng hạn , thì ko lẽ lúc đó cứ sửa hết vào file global.css thì sửa
+đến khi ta già vẫn chưa sửa xong á ( phải có cách nào chứ đúng ko ?)
+
+3. Nếu cách 2 mà không có thì tức là mỗi folder để dẫn đến link page mới chỉ có mỗi page.tsx thôi à ? 
+
+4. Nếu giả sử trong folder con ta muốn kiểu code mà tại đó click vào ra thêm 1 link con nữa , kiểu 
+app/login/user ( kiểu vậy thì làm sao )
+
+5. cái file layout nớ làm cái choá gì vậy ? đéo hiểu nó sinh ra làm qq chi 

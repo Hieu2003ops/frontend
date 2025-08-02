@@ -1,0 +1,243 @@
+/* Các quy tắc CSS chung cho toàn bộ ứng dụng (Home, Login, etc.) */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.layout-container {
+  position: relative;
+}
+
+/* Đảm bảo các nút Đăng nhập và Đăng ký hiển thị đúng */
+/* CSS cho các nút Đăng nhập và Đăng ký trên trang chủ */
+.auth-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between; /* Căn các nút cách đều nhau */
+  align-items: center;           /* Căn chỉnh các nút theo chiều dọc */
+  gap: 20px;                     /* Khoảng cách giữa các nút */
+}
+
+.login-btn, .signup-btn {
+  padding: 12px 24px; /* Điều chỉnh padding cho các nút */
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: inline-flex;  /* Đảm bảo các nút này là inline-flex để hiển thị cùng hàng */
+  align-items: center;
+  justify-content: center;
+  min-width: 150px; /* Đảm bảo các nút có chiều rộng tối thiểu giống nhau */
+  height: 50px; /* Chiều cao của các nút */
+}
+
+/* Định dạng cho nút Đăng nhập */
+.login-btn {
+  background-color: #4CAF50; /* Màu xanh cho nút Đăng nhập */
+  color: white;
+}
+
+/* Định dạng cho nút Đăng ký */
+.signup-btn {
+  background-color: #FFEB3B; /* Màu vàng cho nút Đăng ký */
+  color: black;
+}
+
+/* Các hiệu ứng hover cho nút Đăng nhập và Đăng ký */
+.login-btn:hover {
+  background-color: #45a049;
+}
+
+.signup-btn:hover {
+  background-color: #FBC02D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS cho trang Login */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height của màn hình */
+  background: linear-gradient(145deg, #ffffff, #d9e4e8); /* Màu nền đẹp cho trang login */
+}
+
+.login-box {
+  background-color: white;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #4CAF50; /* Màu xanh lá khi focus vào input */
+  outline: none;
+}
+
+.login-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  width: 100%; /* Để nút đăng nhập rộng hết */
+}
+
+.login-btn:hover {
+  background-color: #45a049; /* Màu xanh đậm khi hover */
+}
+
+.signup-link {
+  margin-top: 20px;
+}
+
+.signup-link a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Các phần tử không ảnh hưởng đến trang chủ */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 36px;
+  color: #333;
+}
+
+.search-input {
+  width: 80%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4CAF50;
+}
+
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.job-company, .job-location {
+  font-size: 14px;
+  color: #777;
+}
+
+.job-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.apply-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #45a049;
+}
+
+.no-jobs {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+}

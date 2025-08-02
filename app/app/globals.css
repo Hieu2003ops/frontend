@@ -1,6 +1,7 @@
+@import "tailwindcss";
 /* Các quy tắc CSS chung cho toàn bộ ứng dụng (Home, Login, etc.) */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   background-color: #f5f5f5;
   margin: 0;
   padding: 0;
@@ -20,18 +21,19 @@ body {
   z-index: 1000;
   display: flex;
   justify-content: space-between; /* Căn các nút cách đều nhau */
-  align-items: center;           /* Căn chỉnh các nút theo chiều dọc */
-  gap: 20px;                     /* Khoảng cách giữa các nút */
+  align-items: center; /* Căn chỉnh các nút theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa các nút */
 }
 
-.login-btn, .signup-btn {
+.login-btn,
+.signup-btn {
   padding: 12px 24px; /* Điều chỉnh padding cho các nút */
   font-size: 16px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
-  display: inline-flex;  /* Đảm bảo các nút này là inline-flex để hiển thị cùng hàng */
+  display: inline-flex; /* Đảm bảo các nút này là inline-flex để hiển thị cùng hàng */
   align-items: center;
   justify-content: center;
   min-width: 150px; /* Đảm bảo các nút có chiều rộng tối thiểu giống nhau */
@@ -40,13 +42,13 @@ body {
 
 /* Định dạng cho nút Đăng nhập */
 .login-btn {
-  background-color: #4CAF50; /* Màu xanh cho nút Đăng nhập */
+  background-color: #4caf50; /* Màu xanh cho nút Đăng nhập */
   color: white;
 }
 
 /* Định dạng cho nút Đăng ký */
 .signup-btn {
-  background-color: #FFEB3B; /* Màu vàng cho nút Đăng ký */
+  background-color: #ffeb3b; /* Màu vàng cho nút Đăng ký */
   color: black;
 }
 
@@ -56,19 +58,8 @@ body {
 }
 
 .signup-btn:hover {
-  background-color: #FBC02D;
+  background-color: #fbc02d;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* CSS cho trang Login */
 .login-container {
@@ -76,7 +67,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full height của màn hình */
-  background: linear-gradient(145deg, #ffffff, #d9e4e8); /* Màu nền đẹp cho trang login */
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #d9e4e8
+  ); /* Màu nền đẹp cho trang login */
 }
 
 .login-box {
@@ -117,12 +112,12 @@ body {
 }
 
 .input-group input:focus {
-  border-color: #4CAF50; /* Màu xanh lá khi focus vào input */
+  border-color: #4caf50; /* Màu xanh lá khi focus vào input */
   outline: none;
 }
 
 .login-btn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 14px;
   font-size: 16px;
@@ -143,7 +138,7 @@ body {
 }
 
 .signup-link a {
-  color: #4CAF50;
+  color: #4caf50;
   text-decoration: none;
   font-weight: bold;
 }
@@ -181,7 +176,7 @@ body {
 }
 
 .search-input:focus {
-  border-color: #4CAF50;
+  border-color: #4caf50;
 }
 
 .job-list {
@@ -209,7 +204,8 @@ body {
   color: #333;
 }
 
-.job-company, .job-location {
+.job-company,
+.job-location {
   font-size: 14px;
   color: #777;
 }
@@ -221,7 +217,7 @@ body {
 }
 
 .apply-btn {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
